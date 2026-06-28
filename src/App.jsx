@@ -1,8 +1,17 @@
-import React from 'react'
+import { Routes, Route } from "react-router";
+import Home from "./Pages/Home";
+import Mainlayout from "./Layout/Mainlayout";
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+   <Routes>
+
+   <Route element={<Mainlayout/>}>
+     <Route path="/" element={<Home/>}/>
+   </Route>
+   </Routes>
+    </>
   )
 }
 
